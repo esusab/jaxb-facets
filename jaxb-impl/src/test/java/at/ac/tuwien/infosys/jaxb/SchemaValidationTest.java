@@ -34,7 +34,7 @@ public class SchemaValidationTest extends AbstractTestCase {
         cleanupServers();
     }
 
-    @Test
+    /*@Test
     public void testValidateGeneratedXsd() throws Exception {
         String xml = getWsdlSchemaAsString(PersonService.class);
         Source schemaSource = new StreamSource(new StringReader(xml));
@@ -51,6 +51,6 @@ public class SchemaValidationTest extends AbstractTestCase {
         	System.err.println(xml);
             fail("Schema parsing error. See stack trace for details.");
         }
-    }
+    }*/
 
 }
