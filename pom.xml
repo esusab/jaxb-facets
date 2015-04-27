@@ -83,14 +83,17 @@
 		<module>jaxb-impl</module>
     </modules>
 
-    <repositories>
+    <distributionManagement>
 		<repository>
-			<id>github-repo-releases</id>
-			<url>https://raw.github.com/whummer/jaxb-facets/master/releases</url>
+			<id>releases</id>
+			<name>Internal Releases</name>
+			<url>http://integracao.esus.ufsc.br/nexus/content/repositories/releases</url>
+			<!-- <url>http://150.162.196.140:8081/nexus/content/repositories/releases</url> -->
 		</repository>
-	    <repository>
-	        <id>infosys-repo-releases</id>
-	        <url>http://www.infosys.tuwien.ac.at/mvn</url>
-	    </repository>
-	</repositories>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<url>http://integracao.esus.ufsc.br/nexus/content/repositories/releases</url>
+			<!-- <url>http://150.162.196.140:8081/nexus/content/repositories/releases</url> -->
+		</snapshotRepository>
+	</distributionManagement>
 </project>
