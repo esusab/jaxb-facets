@@ -678,7 +678,7 @@ public class XmlSchemaEnhancer {
 			} else {
 				throw new IllegalArgumentException("" + annoClass);
 			}
-		} else if (type.getClass().getName().endsWith("ClassType")) {
+		} else if (type.getClass().getName().endsWith("ClassType") && !type.getClass().getName().equals("com.sun.tools.javac.code.Type$ClassType")) {
 			anno = SchemagenUtil.extractAnnotation(type, annoClass);
 			if(isAssignableFrom(javax.xml.bind.annotation.Annotation.class, annoClass)) {
 				AppInfo appinfo = SchemagenUtil.extractAnnotation(type, AppInfo.class);
